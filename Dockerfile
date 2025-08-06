@@ -4,7 +4,6 @@ FROM php:7.3-apache
 RUN a2enmod rewrite
 RUN a2enmod actions
 RUN a2enmod cgi
-RUN a2enmod acceptpathinfo
 RUN a2enmod include
 
 # Install necessary packages & PHP extensions

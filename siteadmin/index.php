@@ -1,6 +1,9 @@
 <?php
 ini_set('session.save_path', '/tmp');
 session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 define('_VALID', true);
 define('_ADMIN', true);
 require '../include/config.php';
@@ -66,3 +69,4 @@ $smarty->display($module_template);
 $smarty->display('footer.tpl');
 
 ?>
+

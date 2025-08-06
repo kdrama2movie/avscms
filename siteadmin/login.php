@@ -1,4 +1,6 @@
 <?php
+ini_set('session.save_path', '/tmp');
+session_start();
 define('_VALID', true);
 define('_ADMIN', true);
 include('../include/config.php');
@@ -65,3 +67,4 @@ $smarty->assign('err',$err);
 $smarty->assign('errors',$errors);
 $smarty->display('login.tpl');
 ?>
+

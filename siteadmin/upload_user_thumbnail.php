@@ -1,4 +1,6 @@
 <?php
+ini_set('session.save_path', '/tmp');
+session_start();
 define('_VALID', true);
 define('_ADMIN', true);
 require '../include/config.php';
@@ -91,4 +93,5 @@ if ($remove == 0) {
 	@unlink($dst);	
 }
 ?>
+
 <script language="javascript" type="text/javascript">window.top.window.stopUpload(<?php echo $UID ?>, <?php echo $addthumb ?>, <?php echo $remove ?>, <?php echo "'".$gender."'" ?>);</script>

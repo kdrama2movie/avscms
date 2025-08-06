@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     git \
     npm \
-    && docker-php-ext-install mysqli gd curl pdo pdo_mysql mbstring exif pcntl bcmath
+    && docker-php-ext-install mysqli curl pdo pdo_mysql mbstring exif pcntl bcmath
 
 # Set PHP recommended configurations
 RUN echo "safe_mode = Off" >> /usr/local/etc/php/conf.d/custom.ini

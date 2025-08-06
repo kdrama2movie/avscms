@@ -31,6 +31,7 @@ RUN echo "post_max_size = 2048M" >> /usr/local/etc/php/conf.d/custom.ini
 RUN echo "upload_max_filesize = 2048M" >> /usr/local/etc/php/conf.d/custom.ini
 RUN echo "register_argc_argv = On" >> /usr/local/etc/php/conf.d/custom.ini
 RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+RUN echo "session.save_path = /tmp" >> /usr/local/etc/php/conf.d/custom.ini
 # Enable exec() (default in Docker PHP images unless disabled by hosting provider)
 # No special action needed unless restricted by external php.ini
 

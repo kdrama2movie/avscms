@@ -1,4 +1,6 @@
 <?php
+ini_set('session.save_path', '/tmp');
+session_start();
 //die('Only enable this script if you dont have support for MultiViews');
 $relative = '';
 $loaders  = array(
@@ -61,3 +63,4 @@ if (isset($request['0'])) {
     die();
 }
 ?>
+

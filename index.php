@@ -1,4 +1,6 @@
 <?php
+ini_set('session.save_path', '/tmp');
+session_start();
 define('_VALID', true);
 require 'include/config.php';
 require 'include/function_global.php';
@@ -38,3 +40,4 @@ $smarty->display('header.tpl');
 $smarty->display('index.tpl');
 $smarty->display('footer.tpl');
 ?>
+

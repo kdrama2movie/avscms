@@ -1,7 +1,7 @@
 <?php
 defined('_VALID') or die('Restricted Access!');
 $config = array();
-$config['BASE_URL'] = 'http://www.yourdomain.com';
+$config['BASE_URL'] = 'https://avscms-m6d1.onrender.com';
 $config['RELATIVE'] = '';
 $config['BASE_DIR'] = dirname(dirname(__FILE__));
 $config['TMP_DIR'] = $config['BASE_DIR']. '/tmp';

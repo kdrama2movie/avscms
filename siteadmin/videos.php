@@ -1,4 +1,6 @@
 <?php
+ini_set('session.save_path', '/tmp');
+session_start();
 define('_VALID', true);
 define('_ADMIN', true);
 require '../include/config.php';
@@ -88,3 +90,4 @@ $smarty->display('leftmenu/menu.tpl');
 $smarty->display($module_template);
 $smarty->display('footer.tpl');
 ?>
+

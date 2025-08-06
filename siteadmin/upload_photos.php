@@ -1,4 +1,6 @@
 <?php
+ini_set('session.save_path', '/tmp');
+session_start();
 define('_VALID', true);
 define('_ADMIN', true);
 require '../include/config.php';
@@ -66,4 +68,5 @@ Auth::checkAdmin();
 
 
 ?>
+
 <script language="javascript" type="text/javascript">window.top.window.stopUpload(<?php echo $AID ?>, <?php echo $photos ?>);</script>

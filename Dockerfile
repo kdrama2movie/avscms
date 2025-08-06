@@ -28,5 +28,8 @@ COPY . /var/www/html/
 # Optional: Set permissions (if needed by Smarty cache/templates_c)
 RUN chown -R www-data:www-data /var/www/html/
 
+# Ensure PHP Session directory exists and writable
+RUN mkdir -p /var/lib/php/sessions && chmod -R 777 /var/lib/php/sessions
+
 # Expose port 80
 EXPOSE 80
